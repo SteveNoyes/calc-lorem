@@ -7,29 +7,74 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Tip calculator app</title>
-
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
 
-  Bill
+  <div class="logo-wrapper">
+    <img src="./assets/images/splitter-logo.png" alt="Splitter Logo" style="width: 80px; border-radius: 20px;">
+  </div>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+  <div class="calc-wrapper">
 
-  Number of People
+    <div class="user-total-input">
+      <h3>Bill</h3>
 
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
+      <div class="user-total-input-wrapper">
+        <input type="text" id="user-total-input" name="user-total-input" placeholder="0.00">
+      </div>
+    </div>
+    <div class="select-percentage-wrapper">
+      <h3>Select Tip %</h3>
+      <div class="percent-button">
+        <p class="percent-btn-graph five-percent">5%</p>
+      </div>
+      <div class="percent-button">
+        <p class="percent-btn-graph ten-percent">10%</p>
+      </div>
+      <div class="percent-button">
+        <p class="percent-btn-graph fifteen-percent">15%</p>
+      </div>
+      <div class="percent-button twenty-five-percent">
+        <p class="percent-btn-graph">25%</p>
+      </div>
+      <div class="percent-button fifty-percent">
+        <p class="percent-btn-graph">50%</p>
+      </div>
+      <div class="percent-button custom-button">
+        <p class="custom-btn-graph">Custom</p>
+      </div>
+    </div>
+    <div class="user-guest-input">
+      <h3>Number of People</h3>
+      <div class="user-guest-input-wrapper">
+        <input type="text" id="user-guest-input" name="user-guest-input" placeholder="4">
+      </div>
+    </div>
+    <div class="calc-output">
+      <div class="tip-amount">
+        <div class="title">
+          <p>Tip Amount</p>
+          <p>/ person</p>
+        </div>
+        <div class="tip-amount-output">
+          <p>$0.00</p>
+        </div>
+      </div>
+      <div class="total-amount">
+        <div class="total-title">
+          <p>Total</p>
+          <p>/ person</p>
+        </div>
+        <div class="total-amount-output">
+          <p>$0.00</p>
+        </div>
+      </div>
+      <div class="calc-reset">
+        <p>reset</p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
