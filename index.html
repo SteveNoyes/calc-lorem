@@ -3,49 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Tip calculator</title>
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
-
   <div class="logo-wrapper">
     <img src="./assets/images/splitter-logo.png" alt="Splitter Logo" style="width: 80px; border-radius: 20px;">
   </div>
 
+
+
   <div class="calc-wrapper">
 
-    <div class="user-total-input">
-      <h3 class="bill-header">Bill</h3>
+    <div class="desktop-wrapper">
+      <div class="user-total-input">
+        <h3 class="bill-header">Bill</h3>
+        <div class="user-total-input-wrapper">
+          <input type="text" id="user-total-input" name="user-total-input" placeholder="0.00">
+        </div>
+      </div>
+      <div class="select-percentage-wrapper show-on-mobile">
+        <h3>Select Tip %</h3>
+        <div class="button-container">
+          <button class="buttons five-percent" type="submit" value="Save" onclick="fivePercent()">5%</button>
+          <button class="buttons ten-percent" type="submit" value="Save" onclick="tenPercent()">10%</button>
+        </div>
+        <div class="button-container">
+          <button class="buttons fifteen-percent" type="submit" value="Save" onclick="fifteenPercent()">15%</button>
+          <button class="buttons twenty-five-percent" type="submit" value="Save" onclick="twentyFivePercent()">25%</button>
+        </div>
+        <div class="button-container">
+          <button class="buttons fifty-percent" type="submit" value="Save" onclick="fiftyPercent()">50%</button>
+          <button class="buttons custom-btn-graph" type="submit" value="Save" onclick="customPercent()">Custom</button>
+        </div>
+      </div>
+      <div class="select-percentage-wrapper show-on-desktop">
+        <h3>Select Tip %</h3>
+        <div class="button-container">
+          <button class="buttons five-percent" type="submit" value="Save" onclick="fivePercent()">5%</button>
+          <button class="buttons ten-percent" type="submit" value="Save" onclick="tenPercent()">10%</button>
+          <button class="buttons fifteen-percent" type="submit" value="Save" onclick="fifteenPercent()">15%</button>
+        </div>
+        <div class="button-container">
+          <button class="buttons twenty-five-percent" type="submit" value="Save" onclick="twentyFivePercent()">25%</button>
+          <button class="buttons fifty-percent" type="submit" value="Save" onclick="fiftyPercent()">50%</button>
+          <button class="buttons custom-btn-graph" type="submit" value="Save" onclick="customPercent()">Custom</button>
+        </div>
+      </div>
+      <div class="user-guest-input">
+        <h3>Number of People</h3>
+        <div class="user-guest-input-wrapper">
+          <input type="text" id="user-guest-input" name="user-guest-input" placeholder="4">
+        </div>
+      </div>
+    </div>
 
-      <div class="user-total-input-wrapper">
-        <input type="text" id="user-total-input" name="user-total-input" placeholder="0.00">
-      </div>
-    </div>
-    <div class="select-percentage-wrapper">
-      <h3>Select Tip %</h3>
-      <div class="button-container">
-        <button class="buttons five-percent" type="submit" value="Save" onclick="fivePercent()">5%</button>
-        <button class="buttons ten-percent" type="submit" value="Save" onclick="tenPercent()">10%</button>
-      </div>
-      <div class="button-container">
-        <button class="buttons fifteen-percent" type="submit" value="Save" onclick="fifteenPercent()">15%</button>
-        <button class="buttons twenty-five-percent" type="submit" value="Save" onclick="twentyFivePercent()">25%</button>
-      </div>
-      <div class="button-container">
-        <button class="buttons fifty-percent" type="submit" value="Save" onclick="fiftyPercent()">50%</button>
-        <button class="buttons custom-btn-graph" type="submit" value="Save" onclick="customPercent()">Custom</button>
-      </div>
-    </div>
-    <div class="user-guest-input">
-      <h3>Number of People</h3>
-      <div class="user-guest-input-wrapper">
-        <input type="text" id="user-guest-input" name="user-guest-input" placeholder="4">
-      </div>
-    </div>
     <div class="calc-output">
       <div class="tip-amount">
         <div class="title">
@@ -68,7 +82,12 @@
       <div class="calc-reset">
         <p>reset</p>
       </div>
-    </div>
-  </div>
+    </div><!-- Calc Output -->
+
+  </div><!-- Calc Wrapper -->
+
+
+  
+  <script src="./assets/js/app.js"></script>
 </body>
 </html>
