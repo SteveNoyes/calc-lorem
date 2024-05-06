@@ -53,6 +53,7 @@ Users should be able to:
 
 - [How to create two HTML buttons side by side](https://www.shecodes.io/athena/43503-how-to-justify-two-buttons-by-sides-with-css-flexbox) - This helped me
 - [how-to-add-a-svg-icon-within-an-input](https://stackoverflow.com/questions/40808493/how-to-add-a-svg-icon-within-an-input) - This is an amazing article which helped me 
+- [how to assign the "Enter key" to an onclick event](https://stackoverflow.com/questions/55436607/how-to-assign-the-enter-key-to-an-onclick-event) - This is a great article which helps me 
 
 ## Author
 
