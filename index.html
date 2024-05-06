@@ -6,7 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Tip calculator app</title>
+  <title>Tip calculator</title>
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/main.css">
 </head>
@@ -19,7 +19,7 @@
   <div class="calc-wrapper">
 
     <div class="user-total-input">
-      <h3>Bill</h3>
+      <h3 class="bill-header">Bill</h3>
 
       <div class="user-total-input-wrapper">
         <input type="text" id="user-total-input" name="user-total-input" placeholder="0.00">
@@ -27,23 +27,17 @@
     </div>
     <div class="select-percentage-wrapper">
       <h3>Select Tip %</h3>
-      <div class="percent-button">
-        <p class="percent-btn-graph five-percent">5%</p>
+      <div class="button-container">
+        <button class="buttons five-percent" type="submit" value="Save" onclick="fivePercent()">5%</button>
+        <button class="buttons ten-percent" type="submit" value="Save" onclick="tenPercent()">10%</button>
       </div>
-      <div class="percent-button">
-        <p class="percent-btn-graph ten-percent">10%</p>
+      <div class="button-container">
+        <button class="buttons fifteen-percent" type="submit" value="Save" onclick="fifteenPercent()">15%</button>
+        <button class="buttons twenty-five-percent" type="submit" value="Save" onclick="twentyFivePercent()">25%</button>
       </div>
-      <div class="percent-button">
-        <p class="percent-btn-graph fifteen-percent">15%</p>
-      </div>
-      <div class="percent-button twenty-five-percent">
-        <p class="percent-btn-graph">25%</p>
-      </div>
-      <div class="percent-button fifty-percent">
-        <p class="percent-btn-graph">50%</p>
-      </div>
-      <div class="percent-button custom-button">
-        <p class="custom-btn-graph">Custom</p>
+      <div class="button-container">
+        <button class="buttons fifty-percent" type="submit" value="Save" onclick="fiftyPercent()">50%</button>
+        <button class="buttons custom-btn-graph" type="submit" value="Save" onclick="customPercent()">Custom</button>
       </div>
     </div>
     <div class="user-guest-input">

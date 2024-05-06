@@ -45,20 +45,15 @@ Users should be able to:
 ```html
 ```
 ```css
-}
 ```
 ```js
 ```
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-
-https://stackoverflow.com/questions/40808493/how-to-add-a-svg-icon-within-an-input
-
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [How to create two HTML buttons side by side](https://www.shecodes.io/athena/43503-how-to-justify-two-buttons-by-sides-with-css-flexbox) - This helped me
+- [how-to-add-a-svg-icon-within-an-input](https://stackoverflow.com/questions/40808493/how-to-add-a-svg-icon-within-an-input) - This is an amazing article which helped me 
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [stevenmnoyes.com](https://www.stevenmnoyes.com)

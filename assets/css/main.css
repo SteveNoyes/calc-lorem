@@ -1,128 +1,201 @@
 @font-face {
-    font-family: 'Space Mono Bold';
-    src: url('../font/SpaceMono-Bold.woff2') format('woff2'),
-        url('../font/SpaceMono-Bold.woff') format('woff'),
-        url('../font/SpaceMono-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+	font-family: 'Space Mono Bold';
+	src: url('../font/SpaceMono-Bold.woff2') format('woff2'),
+			url('../font/SpaceMono-Bold.woff') format('woff'),
+			url('../font/SpaceMono-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-    font-family: 'Space Mono Bold Italic';
-    src: url('../font/SpaceMono-BoldItalic.woff2') format('woff2'),
-        url('../font/SpaceMono-BoldItalic.woff') format('woff'),
-        url('../font/SpaceMono-BoldItalic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
+	font-family: 'Space Mono Bold Italic';
+	src: url('../font/SpaceMono-BoldItalic.woff2') format('woff2'),
+			url('../font/SpaceMono-BoldItalic.woff') format('woff'),
+			url('../font/SpaceMono-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
-    font-family: 'Space Mono Italic';
-    src: url('../font/SpaceMono-Italic.woff2') format('woff2'),
-        url('../font/SpaceMono-Italic.woff') format('woff'),
-        url('../font/SpaceMono-Italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
+	font-family: 'Space Mono Italic';
+	src: url('../font/SpaceMono-Italic.woff2') format('woff2'),
+			url('../font/SpaceMono-Italic.woff') format('woff'),
+			url('../font/SpaceMono-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
-    font-family: 'Space Mono Regular';
-    src: url('../font/SpaceMono-Regular.woff2') format('woff2'),
-        url('../font/SpaceMono-Regular.woff') format('woff'),
-        url('../font/SpaceMono-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+	font-family: 'Space Mono Regular';
+	src: url('../font/SpaceMono-Regular.woff2') format('woff2'),
+			url('../font/SpaceMono-Regular.woff') format('woff'),
+			url('../font/SpaceMono-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
-
 
 /* - Mobile: 375px
 - Desktop: 1440px */
 
-/* > 💡 These are just the design sizes. Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens. */
+/* Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens. */
 
 :root {
-    /* ### Primary */
-    --strong-cyan: hsl(172, 67%, 45%);
-    /* ### Neutral */
-    --very-dark-cyan: hsl(183, 100%, 15%);
-    --dark-grayish-cyan: hsl(186, 14%, 43%);
-    --grayish-cyan: hsl(184, 14%, 56%);
-    --light-grayish-cyan: hsl(185, 41%, 84%);
-    --very-light-grayish-cyan: hsl(189, 41%, 97%);
-    --white: hsl(0, 0%, 100%);
+	/* ### Primary */
+	--strong-cyan: hsl(172, 67%, 45%);
+	/* ### Neutral */
+	--very-dark-cyan: hsl(183, 100%, 15%);
+	--dark-grayish-cyan: hsl(186, 14%, 43%);
+	--grayish-cyan: hsl(184, 14%, 56%);
+	--light-grayish-cyan: hsl(185, 41%, 84%);
+	--very-light-grayish-cyan: hsl(189, 41%, 97%);
+	--white: hsl(0, 0%, 100%);
 }
-
-/* 
-    font-family: Space Mono
-    Weights: 700
+/*
+	font-family: Space Mono
+	Weights: 700
 */
 body {
-    font-size: 20px;
-    font-weight: 700;
-    font-family: 'Space Mono Regular', sans-serif;
-    background-color: var(--light-grayish-cyan);
-    color: var(--dark-grayish-cyan);
+	font-size: 16px;
+	font-weight: 700;
+	font-family: 'Space Mono Regular', sans-serif;
+	background-color: var(--light-grayish-cyan);
+	color: var(--dark-grayish-cyan);
 }
 
 .logo-wrapper {
-    margin: 40px auto;
-    text-align: center;
+	margin: 40px auto;
+	text-align: center;
 }
 
 .calc-wrapper {
-    background-color: var(--white);
-    border-radius: 20px;
-    padding: 30px;
+	background-color: var(--white);
+	border-radius: 20px 20px 0 0;
+	padding: 35px;
 }
 
 input {
-    width: 100%;
-    height: 40px;
-    background-color: var(--very-light-grayish-cyan);
-    border: none !important;
-    font-family: 'Space Mono Bold';
-    font-size: 25px;
-    color: var(--grayish-cyan);
+	width: 100%;
+	height: 50px;
+	background-color: var(--very-light-grayish-cyan);
+	border: none !important;
+	font-family: 'Space Mono Bold';
+	font-size: 25px;
+	color: var(--grayish-cyan);
 }
 
 .user-total-input-wrapper,
 .user-guest-input-wrapper {
-    display: flex;
-    background-color: var(--very-light-grayish-cyan);
-    border-radius: 15px;
+	display: flex;
+	background-color: var(--very-light-grayish-cyan);
+	border-radius: 15px;
 }
 
 .user-guest-input-wrapper input::placeholder,
 .user-total-input-wrapper input::placeholder {
-    text-align: right;
+	text-align: right;
 }
 
 .user-guest-input-wrapper input,
 .user-total-input-wrapper input {
-    border: none;
-    outline: none;
-    text-align: right;
-    padding-right: 30px;
+	border: 1px solid var(--very-light-grayish-cyan) !important;
+	outline: none;
+	text-align: right;
+	padding-right: 30px;
+	border-radius: 10px;
 }
-
+.user-guest-input-wrapper input:focus,
+.user-total-input-wrapper input:focus {
+	outline-width: 4px;
+	outline-style: solid !important;
+	outline-color: var(--light-grayish-cyan) !important;
+	border-radius: 10px;
+}
 .user-guest-input-wrapper:focus,
 .user-total-input-wrapper:focus {
-    outline-style: solid;
-    outline-color: var(--light-grayish-cyan);
+	border: 1px solid var(--light-grayish-cyan) !important; 
+	outline-style: solid !important;
+	outline-color: var(--light-grayish-cyan) !important;
 }
 
 .user-total-input-wrapper input {
-    background: url(../images/icon-dollar.svg) left / contain no-repeat;
-    background-size: 15px;
-    background-position: 10px;
+	background: url(../images/icon-dollar.svg) left / contain no-repeat;
+	background-size: 15px;
+	background-position: 10px;
 }
 
 .user-guest-input-wrapper input {
-    background: url(../images/icon-person.svg) left / contain no-repeat;
-    background-size: 20px;
-    background-position: 10px;
+	background: url(../images/icon-person.svg) left / contain no-repeat;
+	background-size: 20px;
+	background-position: 10px;
 } 
+
+.bill-header {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.user-total-input {
+	padding-bottom: 40px;
+}
+
+.select-percentage-wrapper h3 {
+	padding-bottom: 20px;
+}
+
+/* Select Tip Buttons */
+/* 
+five-percent
+ten-percent
+fifteen-percent
+twenty-five-percent
+fifty-percent
+custom-button 
+*/
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons {
+  width: 48%;
+  height: 55px;
+  margin-bottom: 20px;
+  font-size: 25px;
+	font-family: 'Space Mono Bold', sans-serif;
+  border: none;
+  background-color: var(--very-dark-cyan);
+  color: var(--white);
+  border-radius: 6px;
+}
+
+.buttons:hover {
+  cursor: pointer;
+	background-color: var(--strong-cyan) !important;
+	color: var(--very-dark-cyan);
+}
+
+.custom-btn-graph {
+	background-color: var(--very-light-grayish-cyan);
+	color: var(--dark-grayish-cyan);
+}
+
+.custom-btn-graph:hover {
+	color: var(--white);
+}
+
+.user-guest-input {
+  padding-top: 20px;
+}
+
+.user-guest-input h3 {
+  padding-bottom: 10px;
+}
+
+.calc-output {
+	padding-top: 30px;
+}
