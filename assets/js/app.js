@@ -51,21 +51,12 @@ document.addEventListener('keydown', function(event) {
 });
 
 
-
-
 // Take total and multiply by percentage selected 
 
 
 
 
-
 // Divide by Number of People to get per person total
-
-
-
-
-
-
 
 
 
@@ -79,3 +70,5 @@ document.addEventListener('keydown', function(event) {
 // fiftyPercent()
 // customPercent()
 
+// On click add background color to button
+// Set percentage variable with clicked percentage
